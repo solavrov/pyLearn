@@ -1,16 +1,18 @@
-import sympy as sym
+from sympy import Symbol, expand, Poly, solve, sin, latex
 
-x = sym.Symbol('x')
-y = sym.Symbol('y')
+x = Symbol('x')
+y = Symbol('y')
 
-q = sym.expand(sym.sin(x + y), trig=True)
+q = expand(sin(x + y), trig=True)
 print(q)
 
-q = sym.expand((x + 1) ** 2)
+q = expand((x + 1) ** 2)
 print(q)
-p = sym.Poly(q, x)
+p = Poly(q, x)
 c = p.coeffs()
 
 q2 = x ** 13 - 2 * x ** 5 - x ** 3 - 20
-s = sym.solve(q2, x)
+s = solve(q2, x)
+
+print(latex(q2))
 
