@@ -57,5 +57,3 @@ while True:
     if g.is_bankrupt() or g.is_lucky():
         break
 input('Press ENTER to quit')
-
-###
