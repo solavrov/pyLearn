@@ -1,4 +1,4 @@
-from sympy import Symbol, expand, factor, solve, simplify, apart, together, collect, latex
+from sympy import Symbol, expand, factor, solve, simplify, apart, together, collect, latex, preview
 
 
 x = Symbol('x')
@@ -54,3 +54,7 @@ print(solve(e4))
 s = solve([e1, e2, e3], [x, y, z])
 print(s)
 
+x_i_ice = Symbol('x_i^ice')
+e5 = x_i_ice**2 + 1
+print(latex(e5))
+# preview(e3)
