@@ -55,6 +55,7 @@ s = solve([e1, e2, e3], [x, y, z])
 print(s)
 
 x_i_ice = Symbol('x_i^ice')
-e5 = x_i_ice**2 + 1
+y_j_water = Symbol('y_j^water')
+e5 = (1 + x_i_ice**2) / (1 + y_j_water**2)
 print(latex(e5))
 # preview(e3)
