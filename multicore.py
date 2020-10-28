@@ -101,7 +101,7 @@ if __name__ == '__main__':
         39210923
     ]
 
-    primes = primes_6_50
+    primes = primes_8_10
 
     # single process
     t1 = time()
