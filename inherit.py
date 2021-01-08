@@ -17,6 +17,13 @@ class Soldier(Man):
         print('bah! bah! bah! with', self.weapon)
 
 
+class Soldier2(Man):
+    weapon = 'pistol'
+
+    def fire(self):
+        print('bah! bah! bah! with', self.weapon)
+
+
 if __name__ == '__main__':
     a = Soldier()
     a.grow_up()
