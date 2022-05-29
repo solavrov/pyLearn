@@ -1,4 +1,4 @@
-from numpy import array as array, dot as dot, transpose as t
+from numpy import array as array, dot as dot, transpose as t, identity as identity
 from numpy import linalg as alg
 
 a = array([[1, 2, 3],
@@ -14,7 +14,7 @@ c = dot(a, b)
 d = array([[1, 2],
            [-3, 4]])
 
-# print(c)
+print(c)
 
 print(alg.det(a))
 
